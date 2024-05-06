@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+.top-image {
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-mobile {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.first-content {
+  /* height: 100vh; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center; */
+  padding-top: 220px;
+  justify-content: space-evenly;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.couple-image {
+  position: relative;
+  width: 450px;
+  height: 450px;
+}
+
+.love-animation {
+  position: absolute;
+  bottom: 85px;
+  left: 20%;
+  width: 250px;
+  height: 250px;
+}
+
+.name-text {
+  position: absolute;
+  bottom: 45px;
+  left: 43%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.second-content img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.second-content {
+  position: relative;
+}
+
+
+.name-container {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
+}
+
+.butterfly-animation {
+  position: absolute;
+  top: 400px;
+  left: 20%;
+  width: 250px;
+  height: 250px;
+
+}
+
+.full-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 100px;
+  /* Create linear gradient for font color */
+  background: linear-gradient(to bottom, #84CB95 0%, #0A733D 100%);
+  /* Apply text color transparent to fully reveal the gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  width: 500px;
+  display: inline-block;
+}
+
+.weds-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+}
+
+.third-content {
+  background-image: url("../public/images/background-two.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: -130px;
+  z-index: -1;
+  position: relative;
+}
+
+
+@media screen and (max-width: 426px) {
+  .first-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 150px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .image-web {
+    display: none;
+  }
+
+  .image-mobile {
+    display: block;
+  }
+
+  .image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .couple-image {
+    width: 310px;
+    height: 310px;
+  }
+
+  .love-animation {
+    bottom: 55px;
+    left: 23%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .name-text {
+    bottom: 28px;
+    left: 42%;
+    font-size: 16px;
+  }
+
+  .second-content img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .second-content {
+    position: relative;
+  }
+
+  .name-container {
+    top: 37%;
+    right: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .butterfly-animation {
+    top: 180px;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .full-name {
+    font-size: 50px;
+    width: 220px;
+  }
+
+  .weds-text {
+    font-size: 25px;
+  }
+
+  .third-content {
+    background-image: url("../public/images/background-mobile-two.png");
+
+    /* top: -130px; */
+
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .butterfly-animation {
+    top: 130px;
+    left: 35%;
+    width: 90px;
+    height: 90px;
+  }
+
+  .full-name {
+    font-size: 40px;
+    width: 200px;
+  }
+
+  .weds-text {
+    font-size: 20px;
   }
 }
